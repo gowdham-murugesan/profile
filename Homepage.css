@@ -1,0 +1,137 @@
+body,h1,h2,h3,h4,h5,h6 {
+    font-family: "Raleway", sans-serif
+}
+
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://www.w3schools.com/w3images/mac.jpg");
+    height: 100%;
+}
+
+#portfolio {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+    padding-bottom: 16px;
+    box-shadow: 0 8px 48px #000000;
+}
+
+.w3-xxlarge {
+    margin-bottom: -8px;
+    margin-top: 8px;
+}
+
+.fa {
+    padding: 0 6px;
+}
+
+/* Apply CSS properties to ui-widgets class */
+.ui-widgets {
+    position: relative;
+    display: inline-block;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 9rem;
+    margin: 1.5rem;
+    border: 1.2rem solid palegreen;
+    box-shadow: inset 0 0 7px grey;
+    border-left-color: #00640060;
+    border-top-color: #00640075;
+    border-right-color: #00640095;
+    border-bottom-color: #006400bd;
+    text-align: center;
+    box-sizing: border-box;
+    transform: rotate(-45deg);
+}
+
+/* Apply css properties to the second
+    child of ui-widgets class */
+.ui-widgets-75 {
+    border-left-color: #00640060;
+    border-top-color: #00640075;
+    border-right-color: #00640095;
+    border-bottom-color: white;
+}
+
+.ui-widgets-50 {
+    border-left-color: #00640060;
+    border-top-color: #00640075;
+    border-right-color: white;
+    border-bottom-color: white;
+}
+
+.ui-widgets-25 {
+    border-left-color: #00640060;
+    border-top-color: white;
+    border-right-color: white;
+    border-bottom-color: white;
+}
+
+/* Apply css properties to ui-widgets class
+    and ui-values class*/
+.ui-widgets .ui-values {
+    top: 26px;
+    position: absolute;
+    left: 0px;
+    right: 0;
+    font-weight: 700;
+    font-size: 2.0rem;
+    transform: rotate(45deg);
+}
+
+/* Apply css properties to ui-widgets
+    class and ui-labels class*/
+.ui-widgets .ui-labels {
+    left: -68px;
+    bottom: -28px;
+    /* text-shadow: 0 0 4px grey; */
+    color: black;
+    position: absolute;
+    width: 100%;
+    font-size: 20px;
+    transform: rotate(45deg);
+}
+
+@media only screen and (min-width: 480px) and (max-width: 780px) {
+    .ui-widgets {
+        width: 7rem;
+        height: 7rem;
+    }
+    .ui-widgets .ui-values {
+        left: 4px;
+        bottom: 15px;
+        top: 18px;
+        font-size: 1.5rem;
+    }
+    .ui-widgets .ui-labels {
+        font-size: 17px;
+        left: -54px;
+        bottom: -34px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .ui-widgets {
+        width: 7rem;
+        height: 7rem;
+    }
+    .ui-widgets .ui-values {
+        left: 4px;
+        bottom: 15px;
+        top: 18px;
+        font-size: 1.5rem;
+    }
+    .ui-widgets .ui-labels {
+        font-size: 17px;
+        left: -54px;
+        bottom: -34px;
+    }
+}
