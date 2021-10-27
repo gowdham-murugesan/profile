@@ -7,6 +7,10 @@ body, html {
     line-height: 1.8;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Full height image header */
 .bgimg-1 {
     background-position: center;
@@ -19,7 +23,7 @@ body, html {
     position: sticky;
     top: 0;
     background-color: white;
-    z-index: 100;
+    z-index: 1;
     padding-bottom: 16px;
     box-shadow: 0 8px 48px #000000;
 }
@@ -33,6 +37,10 @@ body, html {
     padding: 0 6px;
 }
 
+.fa-remove {
+    font-size: 50px;
+}
+
 /* Apply CSS properties to ui-widgets class */
 .ui-widgets {
     position: relative;
@@ -41,38 +49,54 @@ body, html {
     height: 9rem;
     border-radius: 9rem;
     margin: 1.5rem;
-    border: 1.2rem solid palegreen;
+    border: 1.2rem solid green;
     box-shadow: inset 0 0 7px grey;
-    border-left-color: #00640060;
+    /* border-left-color: #00640060;
     border-top-color: #00640075;
     border-right-color: #00640095;
-    border-bottom-color: #006400bd;
+    border-bottom-color: #006400bd; */
+    /* border-image:   linear-gradient(to right, grey 25%, yellow 25%, yellow 50%,red 50%, red 75%, teal 75%) 5; */
+    /* border: 1.2rem solid transparent; */
+    border-radius: 9rem;
+    /* background-image: linear-gradient(white, white), 
+                      linear-gradient(270deg, transparent 50%, black 50%), linear-gradient(0deg, black 50%, lightgray 50%); */
+    background-origin: border-box;
+    background-clip: content-box, border-box;
     text-align: center;
     box-sizing: border-box;
-    transform: rotate(-45deg);
+    /* transform: rotate(-45deg); */
 }
 
 /* Apply css properties to the second
     child of ui-widgets class */
-.ui-widgets-75 {
-    border-left-color: #00640060;
-    border-top-color: #00640075;
-    border-right-color: #00640095;
-    border-bottom-color: white;
+.ui-widgets-95 {
+    border: 1.2rem solid transparent;
+    background-image: linear-gradient(white, white), 
+    linear-gradient(308deg, palegreen 14%, green 30%), linear-gradient(0deg, black 50%, lightgray 50%);
 }
 
-.ui-widgets-50 {
-    border-left-color: #00640060;
-    border-top-color: #00640075;
-    border-right-color: white;
-    border-bottom-color: white;
+.ui-widgets-90 {
+    border: 1.2rem solid transparent;
+    background-image: linear-gradient(white, white), 
+    linear-gradient(312deg, palegreen 15%, green 30%), linear-gradient(0deg, black 50%, lightgray 50%);
 }
 
-.ui-widgets-25 {
-    border-left-color: #00640060;
-    border-top-color: white;
-    border-right-color: white;
-    border-bottom-color: white;
+.ui-widgets-80 {
+    border: 1.2rem solid transparent;
+    background-image: linear-gradient(white, white), 
+    linear-gradient(294deg, palegreen 18%, green 40%), linear-gradient(0deg, black 50%, lightgray 50%);
+}
+
+.ui-widgets-70 {
+    border: 1.2rem solid transparent;
+    background-image: linear-gradient(white, white), 
+    linear-gradient(294deg, palegreen 23%, green 50%), linear-gradient(0deg, black 50%, lightgray 50%);
+}
+
+.ui-widgets-60 {
+    border: 1.2rem solid transparent;
+    background-image: linear-gradient(white, white), 
+    linear-gradient(290deg, palegreen 32%, green 50%), linear-gradient(0deg, black 50%, lightgray 50%)
 }
 
 /* Apply css properties to ui-widgets class
@@ -84,20 +108,38 @@ body, html {
     right: 0;
     font-weight: 700;
     font-size: 2.0rem;
-    transform: rotate(45deg);
+    /* transform: rotate(45deg); */
 }
 
 /* Apply css properties to ui-widgets
     class and ui-labels class*/
 .ui-widgets .ui-labels {
-    left: -68px;
-    bottom: -28px;
+    left: -4px;
+    bottom: -60px;
     /* text-shadow: 0 0 4px grey; */
     color: black;
     position: absolute;
     width: 100%;
     font-size: 20px;
-    transform: rotate(45deg);
+    /* transform: rotate(45deg); */
+}
+
+[data-aos="rotate-c"] {
+    transform: rotate(-180deg);
+    transition-property: transform;
+}
+
+[data-aos="rotate-c"].aos-animate {
+transform: rotate(0deg);
+}
+
+[data-aos="rotate-b"] {
+    transform: rotate(+180deg);
+    transition-property: transform;
+}
+
+[data-aos="rotate-b"].aos-animate {
+transform: rotate(0deg);
 }
 
 @media only screen and (min-width: 480px) and (max-width: 780px) {
@@ -106,15 +148,15 @@ body, html {
         height: 7rem;
     }
     .ui-widgets .ui-values {
-        left: 4px;
-        bottom: 15px;
-        top: 18px;
+        left: 2px;
+        bottom: 0px;
+        top: 16px;
         font-size: 1.5rem;
     }
     .ui-widgets .ui-labels {
         font-size: 17px;
-        left: -54px;
-        bottom: -34px;
+        left: -2px;
+        bottom: -54px;
     }
 }
 
@@ -124,14 +166,14 @@ body, html {
         height: 7rem;
     }
     .ui-widgets .ui-values {
-        left: 4px;
+        left: 2px;
         bottom: 15px;
-        top: 18px;
+        top: 16px;
         font-size: 1.5rem;
     }
     .ui-widgets .ui-labels {
         font-size: 17px;
-        left: -54px;
-        bottom: -34px;
+        left: 0px;
+        bottom: -54px;
     }
 }
