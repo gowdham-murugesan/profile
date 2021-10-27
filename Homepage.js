@@ -114,3 +114,9 @@ if(screen.width < 600) {
     delay: 100,
     once: true
   });
+
+  // Loader
+
+  $(window).on('load', function () {
+    $('#loading').fadeOut();
+  });
