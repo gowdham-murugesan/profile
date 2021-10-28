@@ -9,8 +9,6 @@ echo $message;
 
 $html = `$name <br> $email <br> $message`;
 
-echo $html;
-
 //Import PHPMailer classes into the global namespace
 //These must be at the top of your script, not inside a function
 use PHPMailer\PHPMailer\PHPMailer;
@@ -56,6 +54,7 @@ try {
     echo 'Message has been sent';
     header("location:index.html");
 } catch (Exception $e) {
+    echo $html;
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 //     header("location:index.html");
 }
