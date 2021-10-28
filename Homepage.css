@@ -166,6 +166,29 @@ transform: rotate(0deg);
     padding: 120px 48px;
   }
 
+  #movetop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #d94646;
+    color: white;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 2rem;
+  }
+
+  #movetop i {
+      font-size: 24px;
+  }
+  
+  #movetop:hover {
+    background-color: #555;
+  }
+
 @media only screen and (min-width: 480px) and (max-width: 780px) {
     .ui-widgets {
         width: 7rem;
@@ -203,4 +226,13 @@ transform: rotate(0deg);
     .start-some {
         padding: 60px 48px 120px 48px;
     }
+    #movetop {
+        bottom: 15px;
+        right: 20px;
+        padding: 8px;
+      }
+    
+      #movetop i {
+          font-size: 18px;
+      }
 }
