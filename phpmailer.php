@@ -1,11 +1,8 @@
 <?php
 
 $name = $_GET['name'];
-echo $name;
 $email = $_GET['email'];
-echo $email;
 $message = $_GET['message'];
-echo $message;
 
 $html = ''.$name.' <br> '.$email.' <br> '.$message.'';
 
@@ -54,7 +51,6 @@ try {
     echo 'Message has been sent';
     header("location:index.html");
 } catch (Exception $e) {
-    echo $html;
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-//     header("location:index.html");
+    header("location:index.html");
 }
