@@ -50,9 +50,9 @@ try {
     $mail->send();
     echo 'Message has been sent';
 //     echo $html;
-    header("location:index.html");
+    header( "refresh:3;url=index.html" );
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 //     echo $html;
-    header("location:index.html");
+    header( "refresh:3;url=index.html" );
 }
