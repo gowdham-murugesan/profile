@@ -1,8 +1,11 @@
 <?php
 
 $name = $_GET['name'];
+echo $name;
 $email = $_GET['email'];
+echo $email;
 $message = $_GET['message'];
+echo $message;
 
 $html = `$name <br> $email <br> $message`;
 
