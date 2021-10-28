@@ -162,6 +162,10 @@ transform: rotate(0deg);
     z-index: 100;
   }
 
+  .start-some {
+    padding: 120px 48px;
+  }
+
 @media only screen and (min-width: 480px) and (max-width: 780px) {
     .ui-widgets {
         width: 7rem;
@@ -195,5 +199,8 @@ transform: rotate(0deg);
         font-size: 17px;
         left: 0px;
         bottom: -54px;
+    }
+    .start-some {
+        padding: 60px 48px 120px 48px;
     }
 }
