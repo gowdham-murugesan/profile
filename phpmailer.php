@@ -7,7 +7,7 @@ echo $email;
 $message = $_GET['message'];
 echo $message;
 
-$html = `$name <br> $email <br> $message`;
+$html = ''.$name.' <br> '.$email.' <br> '.$message.'';
 
 //Import PHPMailer classes into the global namespace
 //These must be at the top of your script, not inside a function
