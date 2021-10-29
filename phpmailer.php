@@ -40,11 +40,11 @@ try {
     $mail->Body    = $html;
     $mail->AltBody = 'New user sent mail';
     $mail->send();
-    echo 'Message has been sent';
+    echo 'Message has been sent <br> You will be redirected to main page in 3 seconds...';
 //     echo $html;
     header( "refresh:3;url=index.html" );
 } catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo} <br> You will be redirected to main page in 3 seconds...";
 //     echo $html;
     header( "refresh:3;url=index.html" );
 }
