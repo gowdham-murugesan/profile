@@ -49,10 +49,12 @@ try {
 
     $mail->send();
     echo 'Message has been sent';
+    echo "You will be redirected to main page in 3 seconds..."
 //     echo $html;
     header( "refresh:3;url=index.html" );
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    echo "You will be redirected to main page in 3 seconds..."
 //     echo $html;
     header( "refresh:3;url=/" );
 }
