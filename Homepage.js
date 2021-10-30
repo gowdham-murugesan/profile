@@ -19,6 +19,10 @@ $(function() {
     });
   });
 
+  document.getElementById("projectclick").classList.remove("w3-text-teal");
+  document.getElementById("aboutclick").classList.remove("w3-text-teal");
+  document.getElementById("contactclick").classList.remove("w3-text-teal");
+
 function teal() {
     document.getElementById("projectclick").classList.add("w3-text-teal");
     document.getElementById("aboutclick").classList.remove("w3-text-teal");

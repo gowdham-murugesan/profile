@@ -24,14 +24,14 @@ html {
     top: 0;
     background-color: white;
     z-index: 1;
-    padding-bottom: 16px;
+    /* padding-bottom: 16px; */
     box-shadow: 0 8px 48px #000000;
 }
 
-.w3-xxlarge {
+/* .w3-xxlarge {
     margin-bottom: -8px;
     margin-top: 8px;
-}
+} */
 
 .fa {
     padding: 0 6px;
@@ -189,6 +189,16 @@ transform: rotate(0deg);
     background-color: #555;
   }
 
+  .footer-logo {
+      display: flex;
+      align-items: center;
+  }
+
+  .footer-center {
+      display: flex;
+      justify-content: center;
+  }
+
 @media only screen and (min-width: 480px) and (max-width: 780px) {
     .ui-widgets {
         width: 7rem;
@@ -204,6 +214,17 @@ transform: rotate(0deg);
         font-size: 17px;
         left: -2px;
         bottom: -54px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .footer-logo {
+        flex-direction: column;
+    }
+
+    .footer-center {
+        justify-content: left;
+        margin-top: 20px;
     }
 }
 
