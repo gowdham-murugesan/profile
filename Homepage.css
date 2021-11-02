@@ -1,5 +1,5 @@
 body,h1,h2,h3,h4,h5,h6 {
-    font-family: "Raleway", sans-serif
+    font-family: "Raleway", sans-serif;
 }
 
 body, html {
@@ -43,6 +43,7 @@ html {
 
 /* Apply CSS properties to ui-widgets class */
 .ui-widgets {
+    font-family: 'Courier Prime';
     position: relative;
     display: inline-block;
     width: 9rem;
@@ -197,6 +198,15 @@ transform: rotate(0deg);
   .footer-center {
       display: flex;
       justify-content: center;
+  }
+
+  .project_card hr {
+    border-top: 1px dotted black;
+  }
+
+  .skills_footer span {
+      background-color: #e8eaf6 !important;
+      font-size: 12px !important;
   }
 
 @media only screen and (min-width: 480px) and (max-width: 780px) {
