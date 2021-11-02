@@ -206,16 +206,27 @@ try {
         }
 
         .success-message__icon {
+            width: 275px;
             margin-top: 130px;
             margin-left: 50%;
             transform: translateX(-50%);
+        }
+
+        @media only screen and (max-width: 480px) {
+            .success-message__icon {
+                width: 240px;
+            }
+
+            .container h1 {
+                font-size: 40px;
+            }
         }
 </style>
 </head>
 <body>
     <div class="loader abs tl"><!-- Loading --></div>
 	<div class="container abs">
-        <img src="https://cdn-user-icons.flaticon.com/56815/56815977/1635872009988.svg?token=exp=1635872928~hmac=64b1a1ce36cf1d5eee0f0f65af0798ca" alt="tick" class="success-message__icon" style="width: 275px; margin-bottom: -30px;">
+        <img src="https://cdn-user-icons.flaticon.com/56815/56815977/1635872009988.svg?token=exp=1635872928~hmac=64b1a1ce36cf1d5eee0f0f65af0798ca" alt="tick" class="success-message__icon" style="margin-bottom: -30px;">
     	<h1>Mail Successfully Sent...!!</h1> 
         <h3>You will be redirected to home page in 3 seconds...</h3>     
     </div>
