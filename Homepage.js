@@ -1,3 +1,10 @@
+window.onload = function() {
+    if(!window.location.hash) {
+        window.location = window.location + '#gowdham';
+        window.location.reload();
+    }
+}
+
 // Script to open and close sidebar
 function w3_open() {
     document.getElementById("mySidebar").style.display = "block";
