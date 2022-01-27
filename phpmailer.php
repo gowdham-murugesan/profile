@@ -23,6 +23,7 @@ try {
     $mail->Password   = 'ibewtxlhgevaonvy';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;            //Enable implicit TLS encryption
     $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+
     //Recipients
     $mail->setFrom('counseling.gowdham@gmail.com', 'Gowdham M');
     $mail->addAddress('gowdhammurugesh24@gmail.com', 'Gowdham M');     //Add a recipient
@@ -206,9 +207,9 @@ try {
 
         .success-message__icon {
             width: 275px;
+            margin-top: 130px;
             margin-left: 50%;
             transform: translateX(-50%);
-            margin-bottom: -130px;
         }
 
         @media only screen and (max-width: 480px) {
@@ -225,18 +226,9 @@ try {
 <body>
     <div class="loader abs tl"><!-- Loading --></div>
 	<div class="container abs">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 408.576 408.576" style="enable-background:new 0 0 512 512" xml:space="preserve" class="success-message__icon">
-            <circle r="204.288" cx="204.288" cy="204.288" fill="#57bc76" shape="circle" transform="matrix(0.63,0,0,0.63,75.58655792236328,75.58655792236328)"/>
-            <g transform="matrix(0.7,0,0,0.7,61.28639831542969,61.28639831542969)">
-                <g xmlns="http://www.w3.org/2000/svg">
-                    <g>
-                        <path d="M204.288,0C91.648,0,0,91.648,0,204.288s91.648,204.288,204.288,204.288s204.288-91.648,204.288-204.288    S316.928,0,204.288,0z M318.464,150.528l-130.56,129.536c-7.68,7.68-19.968,8.192-28.16,0.512L90.624,217.6    c-8.192-7.68-8.704-20.48-1.536-28.672c7.68-8.192,20.48-8.704,28.672-1.024l54.784,50.176L289.28,121.344    c8.192-8.192,20.992-8.192,29.184,0C326.656,129.536,326.656,142.336,318.464,150.528z" fill="#ffffff" data-original="#000000" style="" class=""/>
-                    </g>
-                </g>
-            </g>
-        </svg>
-        <h1>Mail Successfully Sent...!!</h1> 
-        <h3>You will be redirected to home page in 3 seconds...</h3>
+        <img src="https://cdn-user-icons.flaticon.com/56815/56815977/1635872009988.svg?token=exp=1635872928~hmac=64b1a1ce36cf1d5eee0f0f65af0798ca" alt="tick" class="success-message__icon" style="margin-bottom: -30px;">
+    	<h1>Mail Successfully Sent...!!</h1> 
+        <h3>You will be redirected to home page in 3 seconds...</h3>     
     </div>
 </body>
 </html>
