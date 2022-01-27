@@ -214,9 +214,9 @@ try {
 
         .success-message__icon {
             width: 275px;
-            margin-top: 130px;
             margin-left: 50%;
             transform: translateX(-50%);
+            margin-bottom: -130px;
         }
 
         @media only screen and (max-width: 480px) {
