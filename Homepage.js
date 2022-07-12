@@ -146,3 +146,10 @@ if(screen.width < 600) {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
     }
+
+    // window.onload = function() {
+    //     if(!window.location.hash) {
+    //         window.location = window.location + '#loaded';
+    //         window.location.reload();
+    //     }
+    // }
