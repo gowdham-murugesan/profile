@@ -67,7 +67,7 @@ if(screen.width < 600) {
         var width = elem.innerHTML.slice(0, -1);
         var id = setInterval(frame, 10);
         function frame() {
-            if (width < 80){
+            if (width < 70){
                 width++; 
                 elem.style.width = width + '%'; 
                 elem.innerHTML = width * 1  + '%';
@@ -81,7 +81,7 @@ if(screen.width < 600) {
         var width1 = elem1.innerHTML.slice(0, -1);
         var id1 = setInterval(frame1, 10);
         function frame1() {
-            if (width1 < 85) {
+            if (width1 < 75) {
                 width1++; 
                 elem1.style.width = width1 + '%'; 
                 elem1.innerHTML = width1 * 1  + '%';
@@ -95,7 +95,7 @@ if(screen.width < 600) {
         var width2 = elem2.innerHTML.slice(0, -1);
         var id2 = setInterval(frame2, 10);
         function frame2() {
-            if (width2 < 90) {
+            if (width2 < 80) {
                 width2++; 
                 elem2.style.width = width2 + '%'; 
                 elem2.innerHTML = width2 * 1  + '%';
